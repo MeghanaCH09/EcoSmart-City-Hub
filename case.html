@@ -6,6 +6,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
     <title>EcoSmart City Hub</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-correct {
+    height: 100px;
+    width: 130px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+header {
+    background-color: #50c878;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    color: black;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #1ABC9C;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.casetitle{
+    color: #0033cc;
+}
+
+.case-section{
+    background-color: #d4d4d4;
+}
+
+.casecard{
+    background-color: #e9e9e9;
+}
+
+.case-button {
+    background-color: #04AA6D;
+    border: 2.5px solid black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+footer {
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    padding: 20px 0;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-links ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-top: .5em
+}
+
+footer-contact{
+    float: right;
+}
+
+.footer-search-bar{
+    align-items: center;
+}
+
+.search-container {
+    margin: 15px 0;
+}
+
+.search-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    max-width: 100%;
+}
+
+.search-button {
+    padding: 10px 15px;
+    background-color: #1ABC9C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #16A085;
+}
+    </style>
 </head>
 <script src="footer.js"></script>
 <body>
@@ -25,6 +145,45 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+        <h1 class="casetitle">Case Studies</h1>
+        <p>Explore the below collection of case studies showcasing successful implementations of smart city solutions across various domains, including sustainability, technology, and transportation.</p>
+
+        <div class="case-section">
+            <div class="casecard">
+                <div>
+                    <h3>Sustainable Urban Development in Amsterdam</h3>
+                    <p>Amsterdam has implemented a range of sustainable practices, including green roofs and energy-efficient buildings, to reduce its carbon footprint while enhancing the quality of life for its residents.</p>
+                    <button class="case-button">Read More...</button>
+                </div>
+            </div>
+            
+            <div class="casecard">
+                <div>
+                    <h3>Smart Traffic Management in Barcelona</h3>
+                    <p>Barcelona's smart traffic management system utilizes real-time data to optimize traffic flow, reduce congestion, and improve public transportation efficiency.</p>
+                    <button class="case-button">Read More...</button>
+                </div>
+            </div>
+
+            <div class="casecard">
+                <div>
+                    <h3>IoT Solutions for Waste Management in San Francisco</h3>
+                    <p>San Francisco has adopted IoT-enabled waste bins that monitor fill levels and optimize collection routes, significantly reducing operational costs and environmental impact.</p>
+                    <button class="case-button">Read More...</button>
+                </div>
+            </div>
+
+            <div class="casecard">
+                <div>
+                    <h3>Community Engagement through Mobile Apps in Seoul</h3>
+                    <p>Seoul has developed mobile applications that allow residents to report issues and provide feedback on city services, fostering greater community involvement in urban governance.</p>
+                    <button class="case-button">Read More...</button>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer>
         <div class="footer-links">

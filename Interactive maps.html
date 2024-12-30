@@ -6,8 +6,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
     <title>EcoSmart City Hub</title>
+    <style>
+        
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-correct {
+    height: 100px;
+    width: 130px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+header {
+    background-color: #50c878;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    color: black;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #1ABC9C;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.Interactivepage {
+    text-align: center;
+    padding: 20px;
+}
+
+.mapstitle {
+    color: #0033cc;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.mapscard {
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+}
+
+.mapscard img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.details, .applications, .examples {
+    margin: 20px 0;
+    text-align: left;
+    padding: 0 20px;
+}
+
+footer {
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    padding: 20px 0;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-links ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-top: .5em
+}
+
+footer-contact{
+    float: right;
+}
+
+.footer-search-bar{
+    align-items: center;
+}
+
+.search-container {
+    margin: 15px 0;
+}
+
+.search-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    max-width: 100%;
+}
+
+.search-button {
+    padding: 10px 15px;
+    background-color: #1ABC9C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #16A085;
+}
+    </style>
 </head>
 <script src="footer.js"></script>
+
 <body>
     <header>
         <div class="logo">
@@ -25,6 +165,65 @@
             </ul>
         </nav>
     </header>
+
+    <main class="Interactivepage">
+        <h1 class="mapstitle">Interactive Maps</h1>
+        <p>Explore our interactive maps that provide valuable insights into urban environments, enabling better
+            decision-making and community engagement.</p>
+
+        <section class="content">
+            <div class="row">
+                <div class="mapscard">
+                    <img src="image1.jpg" alt="Green Technology Market">
+                    <p>Green Technology and Sustainability Market</p>
+                </div>
+                <div class="mapscard">
+                    <img src="image2.jpg" alt="Urban Transportation Data">
+                    <p>Urban Transportation Data</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mapscard">
+                    <img src="image3.jpg" alt="Smart Cities">
+                    <p>Achieving Sustainable Smart Cities</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="details">
+            <h2>Key Features of Our Interactive Maps</h2>
+            <ul>
+                <li><strong>Comprehensive Data Visualization:</strong> Combine various data sets to gain a holistic view
+                    of urban dynamics.</li>
+                <li><strong>User-Friendly Interface:</strong> Designed to be intuitive and accessible.</li>
+                <li><strong>Real-Time Updates:</strong> Access real-time data on city conditions.</li>
+                <li><strong>Customizable Layers:</strong> Toggle different data layers.</li>
+                <li><strong>Community Engagement:</strong> Encourage citizen participation.</li>
+            </ul>
+        </section>
+
+        <section class="applications">
+            <h2>Applications of Interactive Maps</h2>
+            <ul>
+                <li>Urban planning and development</li>
+                <li>Emergency response coordination</li>
+                <li>Public health monitoring</li>
+                <li>Traffic management and optimization</li>
+                <li>Civic engagement initiatives</li>
+            </ul>
+        </section>
+
+        <section class="examples">
+            <h2>Examples of Interactive Mapping Tools</h2>
+            <ul>
+                <li><a href="#">Active Maps by 3DEO</a></li>
+                <li><a href="#">Geoapply</a></li>
+                <li><a href="#">Mapme</a></li>
+                <li><a href="#">Smart Location Mapping by EPA</a></li>
+                <li><a href="#">Esri Smart Mapping</a></li>
+            </ul>
+        </section>
+    </main>
 
     <footer>
         <div class="footer-links">
