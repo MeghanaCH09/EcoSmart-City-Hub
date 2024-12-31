@@ -8,110 +8,141 @@
     <title>EcoSmart City Hub</title>
     <style>
         body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-.logo-correct {
-    height: 100px;
-    width: 130px;
-    padding-top: 0;
-    padding-bottom: 0;
-}
+        header {
+            background-color: #50c878;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: black;
+        }
 
-header {
-    background-color: #50c878;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: right;
-    color: black;
-}
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
+        nav ul li {
+            margin: 0 15px;
+        }
 
-nav ul li {
-    margin: 0 15px;
-}
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease;
+        }
 
-nav ul li a {
-    color: black;
-    text-decoration: none;
-}
+        nav ul li a:hover {
+            color: #1ABC9C;
+            background-color: white;
+            border-radius: 5px;
+        }
 
-nav ul li a:hover {
-    color: #1ABC9C;
-    background-color: white;
-    border-radius: 20px;
-}
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #e9e9e9;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
-.blogtitle{
-    color: #0033cc;
-  }
+        h1.blogtitle {
+            color: #0033cc;
+            text-align: center;
+        }
 
-footer {
-    background-color: #2C3E50;
-    color: #ECF0F1;
-    padding: 20px 0;
-}
+        .blog-brief {
+            text-align: center;
+            font-style: italic;
+        }
 
-.footer-content {
-    text-align: center;
-}
+        h3 {
+            color: #3f566d;
+        }
 
-.footer-links ul {
-    float: left;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding-top: .5em
-}
+        p {
+            line-height: 1.6;
+        }
 
-footer-contact{
-    float: right;
-}
+        button {
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
 
-.footer-search-bar{
-    align-items: center;
-}
+        button:hover {
+            background-color: #037a54;
+            transform: scale(1.05);
+        }
 
-.search-container {
-    margin: 15px 0;
-}
+        .byline {
+            text-align: right;
 
-.search-input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    width: 200px;
-    max-width: 100%;
-}
+        }
 
-.search-button {
-    padding: 10px 15px;
-    background-color: #1ABC9C;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+        .blogtitle {
+            color: #0033cc;
+            text-align: center;
+        }
 
-.search-button:hover {
-    background-color: #16A085;
-}
+        .case-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .casecard {
+            background-color: #e9e9e9;
+            margin: 10px;
+            padding: 20px;
+            width: 100%;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .case-button {
+            background-color: #04AA6D;
+            border: 2.5px solid black;
+            color: white;
+            padding: 10px 22px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        #correct-logo {
+            width: 120px;
+            height: 100px;
+        }
     </style>
 </head>
 <script src="footer.js"></script>
+
 <body>
     <header>
-        <div class="logo">
-            <img src="Logo-Correct.png" alt="EcoSmart City Hub Logo">
-        </div>
+        <a href="EcoSmart home.html"><img id="correct-logo" src="Logo-Correct.png" alt="EcoSmart City Hub Logo"></a>
         <nav>
             <ul>
                 <li><a href="EcoSmart home.html">Home</a></li>
@@ -119,114 +150,177 @@ footer-contact{
                 <li><a href="Interactive maps.html">Interactive Maps</a></li>
                 <li><a href="case.html">Case Studies</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="event.html">Event Calendar</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="contactus.html">Contact Us & Feedback</a></li>
+                <li><a href="bibliography.html">Bibliography</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1 class="blogtitle">Blogs</h1>
-        <p>The following blog post focuses on the role of technology in enhancing urban living and aligns with the themes of sustainability and smart city solutions.</p>
+        <h1 class="blogtitle"><i>Blogs</i></h1>
+        <p class="blog-brief">The following blog post focuses on the role of technology in enhancing urban living and
+            aligns with the
+            themes of sustainability and smart city solutions.</p>
 
         <div class="myblogsection">
             <h3>The Role of Technology in Building Smart Cities</h3>
             <p class="publish">Published on December 19, 2024</p>
-            <p>As urban populations continue to grow, cities face unprecedented challenges, from traffic 
-                congestion and pollution to resource management and public safety. In response, many 
-                cities are turning to technology to create smarter, more efficient urban environments. 
-                This blog explores how technology is reshaping our cities and enhancing the quality of 
+            <p>As urban populations continue to grow, cities face unprecedented challenges, from traffic
+                congestion and pollution to resource management and public safety. In response, many
+                cities are turning to technology to create smarter, more efficient urban environments.
+                This blog explores how technology is reshaping our cities and enhancing the quality of
                 life for residents.</p>
-            
+
             <p><b>1. Data-Driven Decision Making</b></p>
             <p>One of the most significant impacts of technology on urban living is the ability to
-                collect and analyze vast amounts of data. Smart cities utilize sensors, cameras, and IoT 
-                devices to gather real-time information about everything from traffic patterns to energy 
+                collect and analyze vast amounts of data. Smart cities utilize sensors, cameras, and IoT
+                devices to gather real-time information about everything from traffic patterns to energy
                 consumption. This data enables city planners and officials to make informed decisions that
-                improve infrastructure, optimize public services, and enhance overall efficiency. 
+                improve infrastructure, optimize public services, and enhance overall efficiency.
                 <br>
-            For example, cities like Barcelona have implemented smart traffic management systems that 
-            analyze real-time data to reduce congestion and improve public transportation schedules. By 
-            understanding traffic flows and patterns, cities can allocate resources more effectively and 
-            create a smoother commuting experience for residents.</p>
+                For example, cities like Barcelona have implemented smart traffic management systems that
+                analyze real-time data to reduce congestion and improve public transportation schedules. By
+                understanding traffic flows and patterns, cities can allocate resources more effectively and
+                create a smoother commuting experience for residents.
+            </p>
 
             <p><b>2. Enhanced Public Safety</b></p>
-            <p>Technology also plays a crucial role in enhancing public safety within urban areas. 
-                Surveillance cameras equipped with AI algorithms can monitor public spaces for unusual 
-                activity, helping law enforcement respond more quickly to potential threats. Additionally, 
-                smart emergency response systems can analyze data from various sources—such as social 
-                media, weather reports, and traffic conditions—to ensure that emergency services are 
-                dispatched efficiently. 
+            <p>Technology also plays a crucial role in enhancing public safety within urban areas.
+                Surveillance cameras equipped with AI algorithms can monitor public spaces for unusual
+                activity, helping law enforcement respond more quickly to potential threats. Additionally,
+                smart emergency response systems can analyze data from various sources—such as social
+                media, weather reports, and traffic conditions—to ensure that emergency services are
+                dispatched efficiently.
                 <br>
-                Cities like New York have adopted predictive policing models that use historical crime 
+                Cities like New York have adopted predictive policing models that use historical crime
                 data to identify high-risk areas and allocate police resources accordingly. These systems
-                not only improve response times but also foster community trust by ensuring a more visible 
-                police presence in neighborhoods that need it most.</p>
+                not only improve response times but also foster community trust by ensuring a more visible
+                police presence in neighborhoods that need it most.
+            </p>
 
-                <p><b>3. Sustainable Resource Management</b></p>
-                <p>Sustainability is at the heart of smart city initiatives, and technology is essential 
-                in managing urban resources efficiently. Smart grids allow cities to monitor energy 
-                consumption in real time, enabling better management of electricity distribution and 
-                reducing waste. Similarly, smart water management systems can detect leaks in real time, 
+            <p><b>3. Sustainable Resource Management</b></p>
+            <p>Sustainability is at the heart of smart city initiatives, and technology is essential
+                in managing urban resources efficiently. Smart grids allow cities to monitor energy
+                consumption in real time, enabling better management of electricity distribution and
+                reducing waste. Similarly, smart water management systems can detect leaks in real time,
                 minimizing water loss and ensuring that this vital resource is used wisely.
                 <br>
-                Cities like San Francisco have implemented IoT-enabled waste bins that monitor fill 
-                levels and optimize collection routes. This not only reduces operational costs but 
-                also minimizes the environmental impact associated with waste collection.</p>
+                Cities like San Francisco have implemented IoT-enabled waste bins that monitor fill
+                levels and optimize collection routes. This not only reduces operational costs but
+                also minimizes the environmental impact associated with waste collection.
+            </p>
 
-                <p><b>4. Community Engagement</b></p>
-                <p>Technology fosters greater community engagement by providing residents with platforms 
-                to voice their concerns and participate in local governance. Mobile applications enable 
-                citizens to report issues—such as potholes or broken streetlights—directly to city 
-                officials, facilitating quicker resolutions. Furthermore, online forums and social media 
+            <p><b>4. Community Engagement</b></p>
+            <p>Technology fosters greater community engagement by providing residents with platforms
+                to voice their concerns and participate in local governance. Mobile applications enable
+                citizens to report issues—such as potholes or broken streetlights—directly to city
+                officials, facilitating quicker resolutions. Furthermore, online forums and social media
                 channels allow for open dialogue between residents and city leaders.
                 <br>
-                In Seoul, for instance, mobile apps have been developed that allow residents to provide 
-                feedback on city services and suggest improvements. This level of engagement empowers 
-                citizens to take an active role in shaping their communities.</p>
-                <br><br>
-                <p>The integration of technology into urban planning is transforming our cities into 
-                smarter, more efficient environments that prioritize sustainability and quality of 
-                life. As we continue to embrace these innovations, it’s essential for city leaders 
-                and residents alike to collaborate in leveraging technology for the greater good. 
-                By doing so, we can create urban spaces that are not only livable but also resilient in 
+                In Seoul, for instance, mobile apps have been developed that allow residents to provide
+                feedback on city services and suggest improvements. This level of engagement empowers
+                citizens to take an active role in shaping their communities.
+            </p>
+            <br>
+            <p>The integration of technology into urban planning is transforming our cities into
+                smarter, more efficient environments that prioritize sustainability and quality of
+                life. As we continue to embrace these innovations, it's essential for city leaders
+                and residents alike to collaborate in leveraging technology for the greater good.
+                By doing so, we can create urban spaces that are not only livable but also resilient in
                 the face of future challenges.
                 <br><br>
-                What are your thoughts on the role of technology in smart cities? 
-                Have you seen any innovative solutions in your community? 
-                Share your experiences with me below. </p>
-
+                What are your thoughts on the role of technology in smart cities?
+                Have you seen any innovative solutions in your community?
+                Share your experiences with me in the contacts and feedback section.
+            </p>
+            <p class="byline"><i>Meghana Cheruvu</i></p>
         </div>
 
+        <a href="contactus.html" style="text-decoration: none;">
+            <button style="
+                background-color: #04AA6D; 
+                border: 2.5px solid black; 
+                color: white; 
+                padding: 10px 25px; 
+                text-align: center; 
+                text-decoration: none;
+                display: inline-block; 
+                font-size: 13px; 
+                margin: 4px 2px; 
+                cursor: pointer; 
+                border-radius: 5px; 
+                transition: background-color 0.3s;
+                align-items: center;
+            ">
+                <i>Go to Contact Page</i>
+            </button>
+        </a>
     </main>
-    <footer>
-        <div class="footer-links">
-            <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">FAQ</a></li>
-            </ul>
-        </div>
 
-        <div class="footer-search-bar">
-            <input type="text" placeholder="Search..." class="search-input">
-            <button class="search-button">Search</button>
-        </div>
+    <section class="Other-Blogs">
+        <h1 class="blogtitle"><i>Other Blogs You Can Read</i></h1>
+        <div class="case-section">
+            <div class="casecard">
+                <div>
+                    <h3>The Future of Smart Cities: Innovations in Urban Living</h3>
+                    <p>Explore how smart technologies are transforming urban environments and improving the quality of
+                        life for residents.</p>
+                    <a href="Future Of Smart Cities.html"><button class="case-button">Read More...</button></a>
+                </div>
+            </div>
 
-        <div class="footer-content">
-            <p>&copy; 2024 EcoSmart City Hub. All rights reserved.</p>
-        </div>
+            <div class="casecard">
+                <div>
+                    <h3>Sustainable Practices for Modern Urban Development</h3>
+                    <p>Discover effective strategies for integrating sustainability into urban planning and development.
+                    </p>
+                    <a href="Modern Urban Development.html"><button class="case-button">Read More...</button></a>
+                </div>
+            </div>
 
-        <div class="footer-contact">
-            <a href="contactus.html">Contact</a>
-            <p>Email:</p>
-            <p>info@ecosmartcityhub.com</p>
-            <p>Phone:</p>
-            <p>(123) 456-7890</p>
-            <p>Adress:</p>
-            <p>Kg 440, house no. 4, Vision City</p>
+            <div class="casecard">
+                <div>
+                    <h3>Technology's Role in Enhancing Public Transportation</h3>
+                    <p>Learn about the latest technological advancements that are making public transport more efficient
+                        and user-friendly.</p>
+                    <a href="Enhancing Public Transportation.html"><button class="case-button">Read More...</button></a>
+                </div>
+            </div>
         </div>
+    </section>
 
+    <footer style="background-color: #333; color: #fff; padding: 20px 0;">
+        <div style="display: flex; justify-content: space-around; padding: 20px;">
+            <div style="width: 30%;">
+                <h2 style="font-size: 18px; margin-bottom: 10px;">About Me!</h2>
+                <p style="font-size: 14px; line-height: 1.6;">An innovative leader creating a platform for
+                    smart city solutions that enhance technology, transport, and sustainability.</p>
+            </div>
+            <div style="width: 30%;">
+                <h2 style="font-size: 18px; margin-bottom: 10px;">Quick Links</h2>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li style="margin-bottom: 10px;"><a href="EcoSmart home.html"
+                            style="color: #fff; text-decoration: none;">Home</a></li>
+                    <li style="margin-bottom: 10px;"><a href="solutions.html"
+                            style="color: #fff; text-decoration: none;">Solutions</a></li>
+                    <li style="margin-bottom: 10px;"><a href="blog.html"
+                            style="color: #fff; text-decoration: none;">Blog</a></li>
+                    <li style="margin-bottom: 10px;"><a href="contactus.html"
+                            style="color: #fff; text-decoration: none;">Contact</a></li>
+                </ul>
+            </div>
+            <div style="width: 30%;">
+                <h2 style="font-size: 18px; margin-bottom: 10px;">Contact Us</h2>
+                <p style="font-size: 14px; line-height: 1.6;">Email: meghanacheruvu@gmail.com</p>
+                <p style="font-size: 14px; line-height: 1.6;">Phone: +450 096 658</p>
+            </div>
+        </div>
+        <div style="text-align: center; padding: 10px 0;">
+            <a href="Logo-Correct" target="_blank">
+                <img src="Logo-Correct.png" alt="Logo" style="width:100px;height:auto;">
+            </a>
+            <br>&copy; 2024 EcoSmart City Hub. All Rights Reserved.
+        </div>
     </footer>
 
 </body>

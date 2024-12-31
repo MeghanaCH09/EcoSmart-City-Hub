@@ -4,15 +4,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style.css">
-    <title>EcoSmart City Hub</title>
+    <title>Contact Us - EcoSmart City Hub</title>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #50c878;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #1ABC9C;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .main2 {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #0033cc;
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+
+        .main1 {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #0033cc;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            margin-top: 15px;
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        button:hover {
+            background-color: #037a54;
+            transform: scale(1.05);
+        }
+
+        #name {
+            width: 100%;
+        }
+
+        #email {
+            width: 100%;
+        }
+
+        #message {
+            width: 100%;
+        }
+
+        .via {
+            text-align: center;
+        }
+
+        #correct-logo {
+            width: 120px;
+            height: 100px;
+        }
+    </style>
 </head>
 <script src="footer.js"></script>
+
 <body>
     <header>
-        <div class="logo">
-            <img src="Logo-Correct.png" alt="EcoSmart City Hub Logo">
-        </div>
+        <a href="EcoSmart home.html"><img id="correct-logo" src="Logo-Correct.png" alt="EcoSmart City Hub Logo"></a>
         <nav>
             <ul>
                 <li><a href="EcoSmart home.html">Home</a></li>
@@ -20,40 +148,67 @@
                 <li><a href="Interactive maps.html">Interactive Maps</a></li>
                 <li><a href="case.html">Case Studies</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="event.html">Event Calendar</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="contactus.html">Contact Us & Feedback</a></li>
+                <li><a href="bibliography.html">Bibliography</a></li>
             </ul>
         </nav>
     </header>
 
-    <footer>
-        <div class="footer-links">
-            <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">FAQ</a></li>
-            </ul>
-        </div>
+    <main class="main1">
+        <h1>Contact Me!</h1>
+        <h2>Meghana Cheruvu</h2>
+        <p><b><i>Email:</i></b> meghanacheruvu@gmail.com</p>
+        <p><b><i>Phone:</i></b> +450 096 658</p>
+        <p><i><b>Adress:</b></i> <br> Sunrise Apartments<br>
+            12-3-456, 1st Floor<br>
+            Srinagar Colony<br>
+            Hyderabad, Telangana<br>
+            500073, India</p>
+    </main>
 
-        <div class="footer-search-bar">
-            <input type="text" placeholder="Search..." class="search-input">
-            <button class="search-button">Search</button>
-        </div>
+    <main class="main2">
+        <h1>Give Me Your Feedback!</h1>
+        <p class="via"><i>Via, given google form below: </i></p>
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfeXuRLZnBNS-M9HxRnPuPovg1vAgXofuqbWAPUOwETxhW3vQ/viewform?usp=sharing"
+            frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </main>
 
-        <div class="footer-content">
-            <p>&copy; 2024 EcoSmart City Hub. All rights reserved.</p>
-        </div>
 
-        <div class="footer-contact">
-            <a href="contactus.html">Contact</a>
-            <p>Email:</p>
-            <p>info@ecosmartcityhub.com</p>
-            <p>Phone:</p>
-            <p>(123) 456-7890</p>
-            <p>Adress:</p>
-            <p>Kg 440, house no. 4, Vision City</p>
+    <footer style="background-color: #333; color: #fff; padding: 20px 0;">
+        <div style="display: flex; justify-content: space-around; padding: 20px;">
+            <div style="width: 30%;">
+                <h2 style="font-size: 18px; margin-bottom: 10px;">About Me!</h2>
+                <p style="font-size: 14px; line-height: 1.6;">An innovative leader creating a platform for
+                    smart city solutions that enhance technology, transport, and sustainability.</p>
+            </div>
+            <div style="width: 30%;">
+                <h2 style="font-size: 18px; margin-bottom: 10px;">Quick Links</h2>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li style="margin-bottom: 10px;"><a href="EcoSmart home.html"
+                            style="color: #fff; text-decoration: none;">Home</a></li>
+                    <li style="margin-bottom: 10px;"><a href="solutions.html"
+                            style="color: #fff; text-decoration: none;">Solutions</a></li>
+                    <li style="margin-bottom: 10px;"><a href="blog.html"
+                            style="color: #fff; text-decoration: none;">Blog</a></li>
+                    <li style="margin-bottom: 10px;"><a href="contactus.html"
+                            style="color: #fff; text-decoration: none;">Contact</a></li>
+                </ul>
+            </div>
+            <div style="width: 30%;">
+                <h2 style="font-size: 18px; margin-bottom: 10px;">Contact Us</h2>
+                <p style="font-size: 14px; line-height: 1.6;">Email: meghanacheruvu@gmail.com</p>
+                <p style="font-size: 14px; line-height: 1.6;">Phone: +450 096 658</p>
+            </div>
         </div>
-
+        <div style="text-align: center; padding: 10px 0;">
+            <a href="Logo-Correct" target="_blank">
+                <img src="Logo-Correct.png" alt="Logo" style="width:100px;height:auto;">
+            </a>
+            <br>&copy; 2024 EcoSmart City Hub. All Rights Reserved.
+        </div>
     </footer>
 
 </body>
+
+</html>

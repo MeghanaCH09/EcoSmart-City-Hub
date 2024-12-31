@@ -8,196 +8,121 @@
     <title>EcoSmart City Hub</title>
     <style>
         body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-.logo-correct {
-    height: 100px;
-    width: 130px;
-    padding-top: 0;
-    padding-bottom: 0;
-}
+        header {
+            background-color: #50c878;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: black;
+        }
 
-header {
-    background-color: #50c878;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: right;
-    color: black;
-}
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
+        nav ul li {
+            margin: 0 15px;
+        }
 
-nav ul li {
-    margin: 0 15px;
-}
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease;
+        }
 
-nav ul li a {
-    color: black;
-    text-decoration: none;
-}
+        nav ul li a:hover {
+            color: #1ABC9C;
+            background-color: white;
+            border-radius: 5px;
+        }
 
-nav ul li a:hover {
-    color: #1ABC9C;
-    background-color: white;
-    border-radius: 20px;
-}
+        .SmartCityTitle {
+            text-align: center;
+        }
 
-.SmartCityTitle{
-    text-align: center;
-}
-.solutions{
-    color: blue;
-    font-size: 37px;
-}
+        .solutions {
+            color: blue;
+            font-size: 37px;
+        }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 20px auto;
-}
-.section {
-    margin-bottom: 40px;
-    background: #e9e9e9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #3f566d;
-}
-.card {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 20px;
-}
-.card img {
-    width: 150px;
-    height: auto;
-    margin-right: 20px;
-    border-radius: 8px;
-}
-.card div {
-    flex: 1;
-}
-.card h3 {
-    margin: 0;
-    color: #34495e;
-}
-.card p {
-    margin: 5px 0 0;
-    color: black;
-}
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
 
-.section2 {
-    margin-bottom: 40px;
-    background: #d4d4d4;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.section2 h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #3f566d;
-}
+        .section {
+            margin-bottom: 40px;
+            background: #e9e9e9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
-.section3 {
-    margin-bottom: 40px;
-    background: #9a9a9a;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.section3 h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #3f566d;
-}
+        .section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #3f566d;
+        }
 
-.section3 p {
-    background-color: white; 
-    padding: 10px;
-    border-radius: 5px;
-}
+        .card {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
 
-footer {
-    background-color: #2C3E50;
-    color: #ECF0F1;
-    padding: 20px 0;
-}
+        .card img {
+            width: 150px;
+            height: auto;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
 
-.footer-content {
-    text-align: center;
-}
+        .card div {
+            flex: 1;
+        }
 
-.footer-links ul {
-    float: left;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding-top: .5em
-}
+        .card h3 {
+            margin: 0;
+            color: #34495e;
+        }
 
-footer-contact{
-    float: right;
-}
+        .card p {
+            margin: 5px 0 0;
+            color: black;
+        }
 
-.footer-search-bar{
-    align-items: center;
-}
-
-.search-container {
-    margin: 15px 0;
-}
-
-.search-input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    width: 200px;
-    max-width: 100%;
-}
-
-.search-button {
-    padding: 10px 15px;
-    background-color: #1ABC9C;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.search-button:hover {
-    background-color: #16A085;
-}
+        #correct-logo {
+            width: 120px;
+            height: 100px;
+        }
     </style>
 </head>
 <script src="footer.js"></script>
 
 <body>
     <header>
-        <div class="logo">
-            <img class="logo-correct" src="Logo-Correct.png" alt="EcoSmart City Hub Logo">
-        </div>
+        <a href="EcoSmart home.html"><img id="correct-logo" src="Logo-Correct.png" alt="EcoSmart City Hub Logo"></a>
         <nav class="navigation">
             <ul>
-                <li><a href="EcoSmart home.html">&nbsp;&nbsp;Home&nbsp;&nbsp;</a></li>
-                <li><a href="solutions.html">&nbsp;&nbsp;Solutions&nbsp;&nbsp;</a></li>
-                <li><a href="Interactive maps.html">&nbsp;&nbsp;Interactive Maps&nbsp;&nbsp;</a></li>
-                <li><a href="case.html">&nbsp;&nbsp;Case Studies&nbsp;&nbsp;</a></li>
-                <li><a href="blog.html">&nbsp;&nbsp;Blog&nbsp;&nbsp;</a></li>
-                <li><a href="event.html">&nbsp;&nbsp;Event Calendar&nbsp;&nbsp;</a></li>
-                <li><a href="contactus.html">&nbsp;&nbsp;Contact Us&nbsp;&nbsp;</a></li>
+                <li><a href="EcoSmart home.html">Home</a></li>
+                <li><a href="solutions.html">Solutions</a></li>
+                <li><a href="Interactive maps.html">Interactive Maps</a></li>
+                <li><a href="case.html">Case Studies</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contactus.html">Contact Us & Feedback</a></li>
+                <li><a href="bibliography.html">Bibliography</a></li>
             </ul>
         </nav>
     </header>
@@ -209,10 +134,8 @@ footer-contact{
                 integrate technology in urban environments.</p>
         </div>
     </section>
-    <br>
 
     <div class="container">
-        <!-- Sustainability Solutions Section -->
         <div class="section">
             <h2>Sustainability Solutions</h2>
             <div class="card">
@@ -276,163 +199,161 @@ footer-contact{
         </div>
     </div>
 
+    <div class="container">
+        <div class="section3">
+            <h2 class="TransS">Technology Solutions</h2>
+            <div class="card">
+                <div>
+                    <h3>Smart Buildings</h3>
+                    <p>Smart buildings utilize IoT devices and automation systems to manage energy use,
+                        security,
+                        and occupant comfort. These buildings can adjust lighting, heating, and cooling based on
+                        occupancy and environmental conditions, enhancing efficiency and user experience.</p>
+                </div>
+                <img src="Smart Buildings.webp" alt="Smart Buildings">
+            </div>
+            <div class="card">
+                <div>
+                    <h3>Big Data Analytics</h3>
+                    <p>The collection and analysis of big data from various urban sources enable city
+                        planners to
+                        make informed decisions regarding infrastructure development, resource
+                        allocation, and
+                        public services. This data-driven approach improves overall urban management.
+                    </p>
+                </div>
+                <img src="Big Data Analytics.webp" alt="Big Data Analytics">
+            </div>
+            <div class="card">
+                <div>
+                    <h3>AI-Driven Decision Making</h3>
+                    <p>Artificial intelligence can analyze vast amounts of data to generate actionable
+                        insights for
+                        city management. AI solutions can optimize resource distribution, enhance public
+                        safety
+                        through predictive analytics, and improve emergency response times.</p>
+                </div>
+                <img src="AI Driven Decision Making.webp" alt="AI-Driven Decision Making">
+            </div>
+            <div class="card">
+                <div>
+                    <h3>5G Connectivity</h3>
+                    <p>The implementation of 5G networks in smart cities facilitates faster data
+                        transfer and
+                        connectivity between devices. This high-speed network supports advanced
+                        applications such as
+                        augmented reality and real-time data sharing across various urban services.</p>
+                </div>
+                <img src="5G Connectivity.jpg" alt="5G Connectivity">
+            </div>
+            <div class="card">
+                <div>
+                    <h3>Observability as a Service</h3>
+                    <p>This emerging technology provides comprehensive monitoring of urban systems
+                        through
+                        integrated IT solutions. It enables cities to track performance metrics in
+                        real-time,
+                        facilitating proactive maintenance and enhancing service delivery.</p>
+                </div>
+                <img src="Observability as a Service.svg" alt="Observability as a Service">
+            </div>
+
+        </div>
+    </div>
 
     <div class="container">
         <!-- Transportation Solutions Section -->
-        <div class="section2">
-            <h2 class="TransS">Transportation Solutions</h2>
-            <div class="card">
-                <div class="card">
-                        <h3>Integrated Public Transport Systems</h3>
-                        <p>Developing integrated public transport systems that connect various modes of transit (buses,
-                            trains, trams) allows for seamless travel across the city. This integration improves
-                            accessibility and encourages the use of public transport over private vehicles.</p>
-                    <img src="Integrated Public Transport Systems.jpg" alt="Integrated Public Transport Systems">
-                </div>
-                <br><br>
-                <div class="card">
-                    <div>
-                            <h3>Mobility as a Service (MaaS)</h3>
-                            <p>MaaS platforms combine multiple transportation services into a single accessible
-                                platform, allowing users to plan, book, and pay for their entire journey through one
-                                application. This approach simplifies the travel experience and encourages the use of
-                                diverse transport modes.</p>
-                    </div>
-                    <img src="Mobility As A Service (MaaS).jpg" alt="Mobility As A Service (MaaS)">
-                </div>
-                <br><br>
-                <div class="card">
-                    <div>
-                            <h3>Enhanced Pedestrian Infrastructure</h3>
-                            <p>Creating pedestrian-friendly environments with wider sidewalks, pedestrian-only zones,
-                                and
-                                improved crosswalks enhances safety and encourages walking. This infrastructure supports
-                                healthier lifestyles and reduces reliance on vehicles.
-                            </p>
-                    </div>
-                    <img src="Enhanced Pedestrian Infrastructure.jpg" alt="Enhanced Pedestrian Infrastructure">
-                </div>
-                <br><br>
-                <div class="card">
-                    <div>
-                            <h3>Bicycle Sharing Programs</h3>
-                            <p>Implementing bike-sharing systems provides residents with easy access to bicycles for
-                                short
-                                trips around the city. These programs promote cycling as a viable transportation option
-                                and
-                                help reduce traffic congestion.
-                            </p>
-                    </div>
-                    <img src="Bicycle Sharing Programs.webp" alt="Bicycle Sharing Programs">
-                </div>
-                <br><br>
-                <div class="card">
-                    <div>
-                            <h3>Traffic Management Policies</h3>
-                            <p>Establishing traffic management policies that include congestion pricing or low-emission
-                                zones can help regulate vehicle access in busy areas. These policies encourage the use
-                                of
-                                public transport and reduce traffic congestion in urban centers.</p>
-                    </div>
-                    <img src="Traffic Management.webp" alt="Traffic Management Policies">
-                </div>
+        <div class="section">
+            <h2>Transportation Solutions</h2>
 
+            <div class="card">
+                <img src="Integrated Public Transport Systems.jpg" alt="Integrated Public Transport Systems">
+                <div>
+                    <h3>Integrated Public Transport Systems</h3>
+                    <p>Developing integrated public transport systems that connect various modes of transit (buses,
+                        trains, trams) allows for seamless travel across the city. This integration improves
+                        accessibility and encourages the use of public transport over private vehicles.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Mobility As A Service (MaaS).jpg" alt="Mobility As A Service (MaaS)">
+                <div>
+                    <h3>Mobility as a Service (MaaS)</h3>
+                    <p>MaaS platforms combine multiple transportation services into a single accessible platform,
+                        allowing users to plan, book, and pay for their entire journey through one application. This
+                        approach simplifies the travel experience and encourages the use of diverse transport modes.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Enhanced Pedestrian Infrastructure.jpg" alt="Enhanced Pedestrian Infrastructure">
+                <div>
+                    <h3>Enhanced Pedestrian Infrastructure</h3>
+                    <p>Creating pedestrian-friendly environments with wider sidewalks, pedestrian-only zones, and
+                        improved crosswalks enhances safety and encourages walking. This infrastructure supports
+                        healthier lifestyles and reduces reliance on vehicles.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Bicycle Sharing Programs.webp" alt="Bicycle Sharing Programs">
+                <div>
+                    <h3>Bicycle Sharing Programs</h3>
+                    <p>Implementing bike-sharing systems provides residents with easy access to bicycles for short trips
+                        around the city. These programs promote cycling as a viable transportation option and help
+                        reduce traffic congestion.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Traffic Management.webp" alt="Traffic Management Policies">
+                <div>
+                    <h3>Traffic Management Policies</h3>
+                    <p>Establishing traffic management policies that include congestion pricing or low-emission zones
+                        can help regulate vehicle access in busy areas. These policies encourage the use of public
+                        transport and reduce traffic congestion in urban centers.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer style="background-color: #333; color: #fff; padding: 20px 0;">
+        <div style="display: flex; justify-content: space-around; padding: 20px;">
+            <div style="width: 30%;">
+                <h2 style="font-size: 18px; margin-bottom: 10px;">About Me!</h2>
+                <p style="font-size: 14px; line-height: 1.6;">An innovative leader creating a platform for
+                    smart city solutions that enhance technology, transport, and sustainability.</p>
+            </div>
+            <div style="width: 30%;">
+                <h2 style="font-size: 18px; margin-bottom: 10px;">Quick Links</h2>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li style="margin-bottom: 10px;"><a href="EcoSmart home.html"
+                            style="color: #fff; text-decoration: none;">Home</a></li>
+                    <li style="margin-bottom: 10px;"><a href="solutions.html"
+                            style="color: #fff; text-decoration: none;">Solutions</a></li>
+                    <li style="margin-bottom: 10px;"><a href="blog.html"
+                            style="color: #fff; text-decoration: none;">Blog</a></li>
+                    <li style="margin-bottom: 10px;"><a href="contactus.html"
+                            style="color: #fff; text-decoration: none;">Contact</a></li>
+                </ul>
+            </div>
+            <div style="width: 30%;">
+                <h2 style="font-size: 18px; margin-bottom: 10px;">Contact Us</h2>
+                <p style="font-size: 14px; line-height: 1.6;">Email: meghanacheruvu@gmail.com</p>
+                <p style="font-size: 14px; line-height: 1.6;">Phone: +450 096 658</p>
             </div>
         </div>
-
-        <div class="container">
-            <!-- Technolofy Solutions Section -->
-            <div class="section3">
-                <h2 class="TransS">Technology Solutions</h2>
-                <div class="card">
-                    <div>
-                            <h3>Smart Buildings</h3>
-                            <p>Smart buildings utilize IoT devices and automation systems to manage energy use,
-                                security,
-                                and occupant comfort. These buildings can adjust lighting, heating, and cooling based on
-                                occupancy and environmental conditions, enhancing efficiency and user experience.</p>
-                            </div>
-                            <img src="Smart Buildings.webp" alt="Smart Buildings">
-                        </div>
-                        <div class="card">
-                            <div>
-                                    <h3>Big Data Analytics</h3>
-                                    <p>The collection and analysis of big data from various urban sources enable city
-                                        planners to
-                                        make informed decisions regarding infrastructure development, resource
-                                        allocation, and
-                                        public services. This data-driven approach improves overall urban management.
-                                    </p>
-                            </div>
-                            <img src="Big Data Analytics.webp" alt="Big Data Analytics">
-                        </div>
-                        <div class="card">
-                            <div>
-                                    <h3>AI-Driven Decision Making</h3>
-                                    <p>Artificial intelligence can analyze vast amounts of data to generate actionable
-                                        insights for
-                                        city management. AI solutions can optimize resource distribution, enhance public
-                                        safety
-                                        through predictive analytics, and improve emergency response times.</p>
-                            </div>
-                            <img src="AI Driven Decision Making.webp" alt="AI-Driven Decision Making">
-                        </div>
-                        <div class="card">
-                            <div>
-                                    <h3>5G Connectivity</h3>
-                                    <p>The implementation of 5G networks in smart cities facilitates faster data
-                                        transfer and
-                                        connectivity between devices. This high-speed network supports advanced
-                                        applications such as
-                                        augmented reality and real-time data sharing across various urban services.</p>
-                            </div>
-                            <img src="5G Connectivity.jpg" alt="5G Connectivity">
-                        </div>
-                        <div class="card">
-                            <div>
-                                    <h3>Observability as a Service</h3>
-                                    <p>This emerging technology provides comprehensive monitoring of urban systems
-                                        through
-                                        integrated IT solutions. It enables cities to track performance metrics in
-                                        real-time,
-                                        facilitating proactive maintenance and enhancing service delivery.</p>
-                            </div>
-                            <img src="Observability as a Service.svg" alt="Observability as a Service">
-                        </div>
-
-                    </div>
-                </div>
-
-                <footer>
-                    <div class="footer-links">
-                        <ul>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <br>
-                            <li><a href="#">Terms of Service</a></li>
-                            <br>
-                            <li><a href="#">FAQ</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-search-bar">
-                        <input type="text" placeholder="Search..." class="search-input">
-                        <button class="search-button">Search</button>
-                    </div>
-
-                    <div class="footer-content">
-                        <p>&copy; 2024 EcoSmart City Hub. All rights reserved.</p>
-                    </div>
-
-                    <div class="footer-contact">
-                        <a href="contactus.html">Contact</a>
-                        <p>Email:</p>
-                        <p>info@ecosmartcityhub.com</p>
-                        <p>Phone:</p>
-                        <p>(123) 456-7890</p>
-                        <p>Adress:</p>
-                        <p>Kg 440, house no. 4, Vision City</p>
-                    </div>
-
-                </footer>
+        <div style="text-align: center; padding: 10px 0;">
+            <a href="Logo-Correct" target="_blank">
+                <img src="Logo-Correct.png" alt="Logo" style="width:100px;height:auto;">
+            </a>
+            <br>&copy; 2024 EcoSmart City Hub. All Rights Reserved.
+        </div>
+    </footer>
 
 </body>
+
+</html>

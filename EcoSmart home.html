@@ -8,135 +8,377 @@
     <title>EcoSmart City Hub</title>
     <style>
         body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-.logo-correct {
-    height: 100px;
-    width: 130px;
-    padding-top: 0;
-    padding-bottom: 0;
-}
+        header {
+            background-color: #50c878;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: black;
+        }
 
-header {
-    background-color: #50c878;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: right;
-    color: black;
-}
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
+        nav ul li {
+            margin: 0 15px;
+        }
 
-nav ul li {
-    margin: 0 15px;
-}
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease;
+        }
 
-nav ul li a {
-    color: black;
-    text-decoration: none;
-}
+        nav ul li a:hover {
+            color: #1ABC9C;
+            background-color: white;
+            border-radius: 5px;
+        }
 
-nav ul li a:hover {
-    color: #1ABC9C;
-    background-color: white;
-    border-radius: 20px;
-}
+        #welcome {
+            background-color: white;
+            color: #34495E;
+            padding: 50px 20px;
+            text-align: center;
+        }
 
-#welcome {
-    background-color: white;
-    color: #34495E;
-    padding: 50px 20px;
-    text-align: center;
-}
+        .welcometitle {
+            font-size: 45px;
+        }
 
-.cta-button {
-    background-color: #6699dd;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-}
+        .tagline {
+            color: rgb(152, 33, 152);
+            text-align: center;
+        }
 
-.interactive-button {
-    background-color: #50c878;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-}
+        .concepts-card {
+            background-color: #fff;
+            width: 400px;
+            padding: 20px 30px;
+        }
 
-#call-to-action {
-    background-color: #34495E;
-    color: white;
-    text-align: center;
-    padding: 30px 20px;
-}
+        #check {
+            display: none;
+        }
 
-footer {
-    background-color: #2C3E50;
-    color: #ECF0F1;
-    padding: 20px 0;
-}
+        #read1 {
+            display: inline-block;
+            cursor: pointer;
+            color: #fff;
+            background-color: #6699dd;
+            padding: 3px 18px;
+            border-radius: 3px;
+            margin-top: 11px;
+        }
 
-.footer-content {
-    text-align: center;
-}
+        .content {
+            display: none;
+        }
 
-.footer-links ul {
-    float: left;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding-top: .5em
-}
+        #check:checked~.content {
+            display: block;
+        }
 
-footer-contact{
-    float: right;
-}
+        #check:checked~#read1 {
+            display: none;
+        }
 
-.footer-search-bar{
-    align-items: center;
-}
+        #check2 {
+            display: none;
+        }
 
-.search-container {
-    margin: 15px 0;
-}
+        #read2 {
+            display: inline-block;
+            cursor: pointer;
+            color: #fff;
+            background-color: #6699dd;
+            padding: 3px 18px;
+            border-radius: 3px;
+            margin-top: 11px;
+        }
 
-.search-input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    width: 200px;
-    max-width: 100%;
-}
+        .content2 {
+            display: none;
+        }
 
-.search-button {
-    padding: 10px 15px;
-    background-color: #1ABC9C;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+        #check2:checked~.content2 {
+            display: block;
+        }
 
-.search-button:hover {
-    background-color: #16A085;
-}
+        #check2:checked~#read2 {
+            display: none;
+        }
+
+        .home-details-section {
+            text-align: center;
+            padding: 20px;
+            background-color: #d8f3dc;
+        }
+
+        .solution-link .brief {
+            color: #004d40;
+            font-size: 1.5rem;
+        }
+
+        .explore-btn {
+            background-color: #80cbc4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .explore-btn :link {
+            text-decoration: none;
+            background-color: #80cbc4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .explore-btn :visited {
+            text-decoration: none;
+            background-color: #80cbc4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .explore-btn :hover {
+            text-decoration: none;
+            background-color: #80cbc4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .explore-btn:active {
+            text-decoration: none;
+            background-color: #4db6ac;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .focus-areas {
+            margin: 20px 0;
+            background-color: #edf7ed;
+            padding: 20px;
+        }
+
+        .focus-areas .focustitle {
+            color: #004d40;
+            font-size: 1.25rem;
+        }
+
+        .focus-grid {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+        }
+
+        .focus-item {
+            width: 30%;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+        }
+
+        .focus-item .item-title {
+            color: #00796b;
+            font-size: 1rem;
+        }
+
+        .focus-item .item-description {
+            color: #555555;
+            font-size: 0.9rem;
+        }
+
+        .map-btn {
+            background-color: #80cbc4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .map-btn :link {
+            text-decoration: none;
+            background-color: #80cbc4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .map-btn :visited {
+            text-decoration: none;
+            background-color: #80cbc4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .map-btn :hover {
+            text-decoration: none;
+            background-color: #5ca49d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .map-btn :active {
+            text-decoration: none;
+            background-color: #80cbc4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .interactive-map {
+            background-color: #c8e6c9;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .GetInvolved {
+            margin-top: 20px;
+            background-color: #e8f5e9;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .GetInvolved .involve-title {
+            color: #004d40;
+            font-size: 1.25rem;
+        }
+
+        .GetInvolved .involve-description {
+            color: #555555;
+            font-size: 0.9rem;
+        }
+
+        .contact-btn {
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .contact-btn :link {
+            text-decoration: none;
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .contact-btn :visited {
+            text-decoration: none;
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .contact-btn :hover {
+            text-decoration: none;
+            background-color: #0d8069;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .contact-btn :active {
+            text-decoration: none;
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        #correct-logo {
+            width: 120px;
+            height: 100px;
+        }
     </style>
 </head>
 <script src="footer.js"></script>
 
 <body>
     <header>
-        <div class="logo">
-            <img src="Logo-Correct.png" alt="EcoSmart City Hub Logo">
-        </div>
+        <a href="EcoSmart home.html"><img id="correct-logo" src="Logo-Correct.png" alt="EcoSmart City Hub Logo"></a>
         <nav>
             <ul>
                 <li><a href="EcoSmart home.html">Home</a></li>
@@ -144,78 +386,155 @@ footer-contact{
                 <li><a href="Interactive maps.html">Interactive Maps</a></li>
                 <li><a href="case.html">Case Studies</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="event.html">Event Calendar</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="contactus.html">Contact Us & Feedback</a></li>
+                <li><a href="bibliography.html">Bibliography</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="welcome">
-            <h2>Welcome to EcoSmart City Hub</h2>
+            <p class="welcometitle">Welcome to the <br> <b>EcoSmart City Hub</b></p>
+            <p class="tagline"><b>Smart Solutions for a Sustainable Tomorrow</b></p>
+            <br>
             <p>Your gateway to innovative smart city solutions focused on sustainability, transportation, and
                 technology.</p>
-            <a href="solutions.html" class="cta-button">Explore Solutions</a>
-        </section>
 
-        <section>
-            <p>Explore real-time data on transportation routes, energy usage, and pollution levels.</p>
-            <a href="Interactive maps.html" class="interactive-button">interactive Maps</a>
-        </section>
-
-        <section id="features">
-            <h3>Our Focus Areas</h3>
-            <div class="feature">
-                <h4>Sustainability Solutions</h4>
-                <p>Innovative strategies to minimize environmental impact and maximize resource efficiency.</p>
-            </div>
-            <div class="feature">
-                <h4>Transportation Solutions</h4>
-                <p>Smart mobility options that enhance urban transport while reducing emissions.</p>
-            </div>
-            <div class="feature">
-                <h4>Technology Integration</h4>
-                <p>Utilizing cutting-edge technology for real-time data collection and improved urban services.</p>
-            </div>
-        </section>
-
-        <section id="call-to-action">
-            <h3>Get Involved!</h3>
-            <p>Join us in creating smarter, greener cities. Share your ideas or participate in our upcoming events.</p>
-            <a href="contactus.html" class="cta-button">Contact Us</a>
-        </section>
-
-        <footer>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <br>
-                    <li><a href="#">Terms of Service</a></li>
-                    <br>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-search-bar">
-                <input type="text" placeholder="Search..." class="search-input">
-                <button class="search-button">Search</button>
-            </div>
-
-            <div class="footer-content">
-                <p>&copy; 2024 EcoSmart City Hub. All rights reserved.</p>
-            </div>
-
-            <div class="footer-contact">
-                <a href="contactus.html">Contact</a>
-                <p>Email:</p>
-                <p>info@ecosmartcityhub.com</p>
-                <p>Phone:</p>
-                <p>(123) 456-7890</p>
-                <p>Adress:</p>
-                <p>Kg 440, house no. 4, Vision City</p>
+            <div class="row">
+                <div class="column">
+                    <div class="concepts-card">
+                        <input id="check" type="checkbox">
+                        <h2><i>Concept of Smart Cities</i></h2>
+                        <p>Smart cities use digital technologies and data to improve urban services, fostering
+                            efficiency,
+                            inclusivity, and sustainability for enhanced residents' quality of life. By integrating
+                            smart
+                            infrastructure with real-time data collection, these cities create efficient systems that
+                            streamline operations and
+                            reduce resource consumption.</p>
+                        <div class="content">
+                            <p>This innovative approach fosters inclusivity
+                                by ensuring that all residents have access to essential services and opportunities for
+                                civic engagement. Additionally,
+                                smart cities prioritize environmentally friendly practices, such as reducing carbon
+                                emissions and promoting renewable
+                                energy sources. Ultimately, these efforts contribute to a higher quality of life for
+                                residents by creating safer, more
+                                sustainable, and more connected urban environments that meet the needs of diverse
+                                communities.</p>
+                            <label id="read1" for="check">Show Less</label>
+                        </div>
+                        <label id="read1" for="check">Read More...</label>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="concepts-card">
+                        <input id="check2" type="checkbox">
+                        <h2><i>Importance of sustainability, transportation, and technology</i></i></h3>
+                            <p>Sustainability, transportation, and technology are crucial for smart cities, enhancing
+                                resource efficiency, mobility,
+                                and decision-making through real-time data collection. Sustainability focuses on
+                                minimizing environmental impact while
+                                maximizing resource efficiency, ensuring that urban development meets current needs
+                                without compromising future
+                                generations. </p>
+                            <div class="content2">
+                                <p>Transportation solutions enhance mobility by providing smarter, more efficient
+                                    options that reduce
+                                    congestion and emissions, making urban travel easier and more sustainable.
+                                    Meanwhile, technology plays a crucial role
+                                    by enabling real-time data collection and analysis, which improves decision-making
+                                    processes and public services. This
+                                    integration fosters more engaged communities, empowering residents to participate
+                                    actively in shaping their urban
+                                    environments for a better quality of life.</p>
+                                <label id="read2" for="check2">Show Less</label>
+                            </div>
+                            <label id="read2" for="check2">Read More...</label>
+                    </div>
+                </div>
             </div>
 
-        </footer>
+            <section class="home-details-section">
+                <header class="solution-link">
+                    <h1 class="brief">Your gateway to innovative smart city solutions focused on sustainability,
+                        transportation, and
+                        technology.</h1>
+                </header>
+                <br>
+                <div class="content-button">
+                    <button class="explore-btn"><a href="solutions.html">Explore Solutions</a></button>
+
+                    <div class="focus-areas">
+                        <h2 class="focustitle">Our Focus Areas</h2>
+                        <div class="focus-grid">
+                            <div class="focus-item">
+                                <h3 class="item-title">Sustainability Solutions</h3>
+                                <p class="item-description">Innovative strategies to minimize environmental impact and
+                                    maximize resource
+                                    efficiency.</p>
+                            </div>
+                            <div class="focus-item">
+                                <h3 class="item-title">Transportation Solutions</h3>
+                                <p class="item-description">Smart mobility options that enhance urban transport while
+                                    reducing emissions.</p>
+                            </div>
+                            <div class="focus-item">
+                                <h3 class="item-title">Technology Solutions</h3>
+                                <p class="item-description">Utilizing cutting-edge technology for real-time data
+                                    collection and improved urban
+                                    services.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="interactive-map">
+                        <h2>Explore real-time data on transportation routes, energy usage, and pollution levels.</h2>
+                        <button class="map-btn"><a href="Interactive maps.html">Interactive Maps</a></button>
+                    </div>
+                </div>
+                <footer class="GetInvolved">
+                    <h2 class="involve-title">Get Involved!</h2>
+                    <p class="involve-description">Join us in creating smarter, greener cities. Share your ideas or
+                        participate in any upcoming
+                        events.</p>
+                    <button class="contact-btn"><a href="contactus.html">Contact Us</a></button>
+                </footer>
+            </section>
+
+            <footer style="background-color: #333; color: #fff; padding: 20px 0;">
+                <div style="display: flex; justify-content: space-around; padding: 20px;">
+                    <div style="width: 30%;">
+                        <h2 style="font-size: 18px; margin-bottom: 10px;">About Me!</h2>
+                        <p style="font-size: 14px; line-height: 1.6;">An innovative leader creating a platform for
+                            smart city solutions that enhance technology, transport, and sustainability.</p>
+                    </div>
+                    <div style="width: 30%;">
+                        <h2 style="font-size: 18px; margin-bottom: 10px;">Quick Links</h2>
+                        <ul style="list-style-type: none; padding: 0;">
+                            <li style="margin-bottom: 10px;"><a href="EcoSmart home.html"
+                                    style="color: #fff; text-decoration: none;">Home</a></li>
+                            <li style="margin-bottom: 10px;"><a href="solutions.html"
+                                    style="color: #fff; text-decoration: none;">Solutions</a></li>
+                            <li style="margin-bottom: 10px;"><a href="blog.html"
+                                    style="color: #fff; text-decoration: none;">Blog</a></li>
+                            <li style="margin-bottom: 10px;"><a href="contactus.html"
+                                    style="color: #fff; text-decoration: none;">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div style="width: 30%;">
+                        <h2 style="font-size: 18px; margin-bottom: 10px;">Contact Us</h2>
+                        <p style="font-size: 14px; line-height: 1.6;">Email: meghanacheruvu@gmail.com</p>
+                        <p style="font-size: 14px; line-height: 1.6;">Phone: +450 096 658</p>
+                    </div>
+                </div>
+                <div style="text-align: center; padding: 10px 0;">
+                    <a href="Logo-Correct" target="_blank">
+                        <img src="Logo-Correct.png" alt="Logo" style="width:100px;height:auto;">
+                    </a>
+                    <br>&copy; 2024 EcoSmart City Hub. All Rights Reserved.
+                </div>
+            </footer>
 
     </main>
 

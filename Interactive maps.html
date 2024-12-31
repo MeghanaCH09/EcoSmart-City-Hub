@@ -7,152 +7,153 @@
     <link rel="stylesheet" href="Style.css">
     <title>EcoSmart City Hub</title>
     <style>
-        
         body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-.logo-correct {
-    height: 100px;
-    width: 130px;
-    padding-top: 0;
-    padding-bottom: 0;
-}
+        header {
+            background-color: #50c878;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: black;
+        }
 
-header {
-    background-color: #50c878;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: right;
-    color: black;
-}
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
+        nav ul li {
+            margin: 0 15px;
+        }
 
-nav ul li {
-    margin: 0 15px;
-}
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease;
+        }
 
-nav ul li a {
-    color: black;
-    text-decoration: none;
-}
+        nav ul li a:hover {
+            color: #1ABC9C;
+            background-color: white;
+            border-radius: 5px;
+        }
 
-nav ul li a:hover {
-    color: #1ABC9C;
-    background-color: white;
-    border-radius: 20px;
-}
+        .Interactivepage {
+            text-align: center;
+            padding: 20px;
+        }
 
-.Interactivepage {
-    text-align: center;
-    padding: 20px;
-}
+        .mapstitle {
+            color: #0033cc;
+        }
 
-.mapstitle {
-    color: #0033cc;
-}
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px 0;
+        }
 
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px 0;
-}
+        .row {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
 
-.row {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0;
-}
+        .mapscard {
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+            padding: 10px;
+            text-align: center;
+        }
 
-.mapscard {
-    margin: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 300px;
-    padding: 10px;
-    text-align: center;
-}
+        .mapscard img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
 
-.mapscard img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
+        .features,
+        .applications,
+        .examples {
+            margin: 20px 0;
+            text-align: left;
+            padding: 0 20px;
+        }
 
-.details, .applications, .examples {
-    margin: 20px 0;
-    text-align: left;
-    padding: 0 20px;
-}
+        .features {
+            background-color: #e9e9e9;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
 
-footer {
-    background-color: #2C3E50;
-    color: #ECF0F1;
-    padding: 20px 0;
-}
+        .applications {
+            background-color: #e9e9e9;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
 
-.footer-content {
-    text-align: center;
-}
+        .examples {
+            background-color: #e9e9e9;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
 
-.footer-links ul {
-    float: left;
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding-top: .5em
-}
+        #links:link {
+            text-decoration: none;
+            color: #3f566d;
+            cursor: pointer;
+        }
 
-footer-contact{
-    float: right;
-}
+        #links:visited {
+            text-decoration: none;
+            color: #3f566d;
+            cursor: pointer;
+        }
 
-.footer-search-bar{
-    align-items: center;
-}
+        #links:hover {
+            text-decoration: none;
+            color: #3f566d;
+            cursor: pointer;
+        }
 
-.search-container {
-    margin: 15px 0;
-}
+        #links:active {
+            text-decoration: none;
+            color: #3f566d;
+            cursor: pointer;
+        }
 
-.search-input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    width: 200px;
-    max-width: 100%;
-}
 
-.search-button {
-    padding: 10px 15px;
-    background-color: #1ABC9C;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+        .feature_title {
+            color: #3f566d;
+        }
 
-.search-button:hover {
-    background-color: #16A085;
-}
+        .lists {
+            line-height: 1.6;
+        }
+
+        #correct-logo {
+            width: 120px;
+            height: 100px;
+        }
     </style>
 </head>
 <script src="footer.js"></script>
 
 <body>
     <header>
-        <div class="logo">
-            <img src="Logo-Correct.png" alt="EcoSmart City Hub Logo">
-        </div>
+        <a href="EcoSmart home.html"><img id="correct-logo" src="Logo-Correct.png" alt="EcoSmart City Hub Logo"></a>
         <nav>
             <ul>
                 <li><a href="EcoSmart home.html">Home</a></li>
@@ -160,8 +161,8 @@ footer-contact{
                 <li><a href="Interactive maps.html">Interactive Maps</a></li>
                 <li><a href="case.html">Case Studies</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="event.html">Event Calendar</a></li>
-                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="contactus.html">Contact Us & Feedback</a></li>
+                <li><a href="bibliography.html">Bibliography</a></li>
             </ul>
         </nav>
     </header>
@@ -174,25 +175,31 @@ footer-contact{
         <section class="content">
             <div class="row">
                 <div class="mapscard">
-                    <img src="image1.jpg" alt="Green Technology Market">
+                    <img src="Visual Representation of Solutinos.png" alt="Green Technology Market">
                     <p>Green Technology and Sustainability Market</p>
-                </div>
-                <div class="mapscard">
-                    <img src="image2.jpg" alt="Urban Transportation Data">
-                    <p>Urban Transportation Data</p>
                 </div>
             </div>
             <div class="row">
                 <div class="mapscard">
-                    <img src="image3.jpg" alt="Smart Cities">
+                    <img src="Urban Transportation Data.webp" alt="Urban Transportation Data">
+                    <p>Urban Transportation Data</p>
+                </div>
+                <div class="mapscard">
+                    <img src="A Smart City Enabled By Real-Time GIS.jpg" alt="Smart Cities Enabled by GIS">
+                    <p>Achieving Sustainable Smart Cities</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="mapscard">
+                    <img src="Achieving Sustainable Smart Cities.webp" alt="Achieving Sustainable Smart Cities">
                     <p>Achieving Sustainable Smart Cities</p>
                 </div>
             </div>
         </section>
 
-        <section class="details">
-            <h2>Key Features of Our Interactive Maps</h2>
-            <ul>
+        <section class="features">
+            <h2 class="feature_title"><i>Key Features of Our Interactive Maps</i></h2>
+            <ul class="lists">
                 <li><strong>Comprehensive Data Visualization:</strong> Combine various data sets to gain a holistic view
                     of urban dynamics.</li>
                 <li><strong>User-Friendly Interface:</strong> Designed to be intuitive and accessible.</li>
@@ -204,7 +211,7 @@ footer-contact{
 
         <section class="applications">
             <h2>Applications of Interactive Maps</h2>
-            <ul>
+            <ul class="lists">
                 <li>Urban planning and development</li>
                 <li>Emergency response coordination</li>
                 <li>Public health monitoring</li>
@@ -216,43 +223,48 @@ footer-contact{
         <section class="examples">
             <h2>Examples of Interactive Mapping Tools</h2>
             <ul>
-                <li><a href="#">Active Maps by 3DEO</a></li>
-                <li><a href="#">Geoapply</a></li>
-                <li><a href="#">Mapme</a></li>
-                <li><a href="#">Smart Location Mapping by EPA</a></li>
-                <li><a href="#">Esri Smart Mapping</a></li>
+                <li><a id="links" href="https://3deo.com/">Active Maps by 3DEO</a></li>
+                <li><a id="links" href="https://www.geoapply.com/en">Geoapply</a></li>
+                <li><a id="links" href="https://mapme.com/">Mapme</a></li>
+                <li><a id="links" href="https://www.esri.com/en-us/capabilities/mapping/smart-mapping">Esri Smart
+                        Mapping</a></li>
             </ul>
         </section>
     </main>
 
-    <footer>
-        <div class="footer-links">
-            <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">FAQ</a></li>
-            </ul>
+    <footer style="background-color: #333; color: #fff; padding: 20px 0;">
+        <div style="display: flex; justify-content: space-around; padding: 20px;">
+            <div style="width: 30%;">
+                <h2 style="font-size: 18px; margin-bottom: 10px;">About Me!</h2>
+                <p style="font-size: 14px; line-height: 1.6;">An innovative leader creating a platform for
+                    smart city solutions that enhance technology, transport, and sustainability.</p>
+            </div>
+            <div style="width: 30%;">
+                <h2 style="font-size: 18px; margin-bottom: 10px;">Quick Links</h2>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li style="margin-bottom: 10px;"><a href="EcoSmart home.html"
+                            style="color: #fff; text-decoration: none;">Home</a></li>
+                    <li style="margin-bottom: 10px;"><a href="solutions.html"
+                            style="color: #fff; text-decoration: none;">Solutions</a></li>
+                    <li style="margin-bottom: 10px;"><a href="blog.html"
+                            style="color: #fff; text-decoration: none;">Blog</a></li>
+                    <li style="margin-bottom: 10px;"><a href="contactus.html"
+                            style="color: #fff; text-decoration: none;">Contact</a></li>
+                </ul>
+            </div>
+            <div style="width: 30%;">
+                <h2 style="font-size: 18px; margin-bottom: 10px;">Contact Us</h2>
+                <p style="font-size: 14px; line-height: 1.6;">Email: meghanacheruvu@gmail.com</p>
+                <p style="font-size: 14px; line-height: 1.6;">Phone: +450 096 658</p>
+            </div>
         </div>
-
-        <div class="footer-search-bar">
-            <input type="text" placeholder="Search..." class="search-input">
-            <button class="search-button">Search</button>
+        <div style="text-align: center; padding: 10px 0;">
+            <a href="Logo-Correct" target="_blank">
+                <img src="Logo-Correct.png" alt="Logo" style="width:100px;height:auto;">
+            </a>
+            <br>&copy; 2024 EcoSmart City Hub. All Rights Reserved.
         </div>
-
-        <div class="footer-content">
-            <p>&copy; 2024 EcoSmart City Hub. All rights reserved.</p>
-        </div>
-
-        <div class="footer-contact">
-            <a href="contactus.html">Contact</a>
-            <p>Email:</p>
-            <p>info@ecosmartcityhub.com</p>
-            <p>Phone:</p>
-            <p>(123) 456-7890</p>
-            <p>Adress:</p>
-            <p>Kg 440, house no. 4, Vision City</p>
-        </div>
-
     </footer>
+
 
 </body>
